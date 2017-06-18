@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Principal;
 using System.Speech.Synthesis;
 
 namespace HelloWorld
@@ -8,7 +9,7 @@ namespace HelloWorld
         static void Main()
         {
             var speaker = new SpeechSynthesizer();
-            speaker.Speak("Hello World!");
+            speaker.Speak($"Hello {WindowsIdentity.GetCurrent().Name}!");
         }
     }
 }
