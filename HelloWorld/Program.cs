@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Speech.Synthesis;
 
 namespace HelloWorld
 {
@@ -6,7 +7,7 @@ namespace HelloWorld
     {
         static void Main()
         {
-            Console.Write("Hello World!");
+            "Hello World!".Message();
         }
     }
 }
