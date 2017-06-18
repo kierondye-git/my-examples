@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Principal;
 
 namespace HelloWorld
 {
@@ -6,7 +7,7 @@ namespace HelloWorld
     {
         static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine($"Hello {WindowsIdentity.GetCurrent().Name}!");
         }
     }
 }
